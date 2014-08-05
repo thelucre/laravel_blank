@@ -11,7 +11,7 @@
 	////////////////////////////////////////////////////////////////////
 
 	// Path to the PHP binary
-	'php'      => '',
+	'php'      => '/home/bkwld/bin/php',
 
 	// Path to Composer
 	'composer' => './composer.phar',
