@@ -31,7 +31,8 @@
 	////////////////////////////////////////////////////////////////////
 
 	// The root directory where your applications will be deployed
-	'root_directory'   => '/storage/av01912/www/',
+	//'root_directory'   => '/storage/av01912/www/',
+	'root_directory'	=>	'/home/bkwld/rocketeer-test.bkwlddev.com/',
 
 	// The folder the application will be cloned in
 	// Leave empty to use `application_name` as your folder name
@@ -54,7 +55,6 @@
 		// You can pass paths in brackets, so {path.public} will return
 		// the correct path to the public folder
 		'files' => array(
-			'app/database/production.sqlite',
 			'{path.storage}',
 			'{path.public}',
 		),
@@ -64,9 +64,9 @@
 		// a single command as a string or an array of commands
 		'callback' => function ($task, $file) {
 			return array(
-				sprintf('chmod -R 755 %s', $file),
-				sprintf('chmod -R g+s %s', $file),
-				sprintf('chown -R www-data:www-data %s', $file),
+				sprintf('chmod 755 %s', $file),
+				sprintf('chmod g+s %s', $file),
+				//sprintf('chown -R www-data:www-data %s', $file),
 			);
 		},
 

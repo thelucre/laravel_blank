@@ -19,18 +19,18 @@
 	////////////////////////////////////////////////////////////////////
 
 	// The default remote connection(s) to execute tasks on
-	'default' => array('production'),
+	'default' => array('bkserver'),
 
 	// The various connections you defined
 	// You can leave all of this empty or remove it entirely if you don't want
 	// to track files with credentials : Rocketeer will prompt you for your credentials
 	// and store them locally
 	'connections' => array(
-		'production' => array(
-			'host'      => '216.243.143.165',
-			'username'  => 'av01912',
-			'password'  => '',
-			'key'       => '/Users/Howard/.ssh/id_rsa',
+		'bkserver' => array(
+			'host'      => 'bkwlddev.com',
+			'username'  => 'bkwld',
+			'password'  => 'UeGisC2kdXbdR7',
+			'key'       => '',
 			'keyphrase' => '',
 			'agent'     => '',
 		),
@@ -55,6 +55,12 @@
 
 		// Stages configurations
 		'stages' => array(
+			'staging' => array(
+				'scm' => array( 'branch' => 'master' )
+			),
+			'production' => array( 
+				'scm' => array( 'branch' => 'master' )
+			)
 		),
 
 		// Connections configuration
