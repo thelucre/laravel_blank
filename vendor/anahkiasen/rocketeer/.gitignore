@@ -1,0 +1,14 @@
+# Cache and compiled
+bin/rocketeer.phar
+bin/phar
+storage
+.rocketeer
+
+# Plugins
+rocketeer-campfire
+
+# Tests
+tests/_meta/coverage
+
+# Dependencies
+vendor
